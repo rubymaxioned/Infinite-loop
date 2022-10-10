@@ -120,9 +120,9 @@ header .wrapper {
   background-repeat: no-repeat;
   background-position: center center;
  }
-.header-top h1 { text-transform: capitalize; }
+h1 { text-transform: capitalize; }
 
-.header-top h1 a {
+h1 a {
   color: #fff;
   font-weight: bold;
 }
@@ -161,7 +161,33 @@ nav ul {display: none;}
   main styling starts here
 =================================*/
 
+/*Banner section start*/
+header { position: relative; }
 
+.header-card {
+  width: 86%;
+  position: absolute;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 125px;
+    color: #fcfeff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.header-card h2 { 
+  font-size: 22px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+ }
+
+ .header-card p { text-transform: capitalize; }
+
+ .header-card p span { text-transform: uppercase; }
+
+/*End of Banner section*/
 
 
 
@@ -175,7 +201,7 @@ nav ul {display: none;}
 /*=================================
   footer styling starts here
 =================================*/ 
-
+.form-section textarea { width: 86%; }
 
 
 
@@ -188,9 +214,55 @@ nav ul {display: none;}
 
 /*media query starts*/
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (min-width: 480px) {
 
-
-  
-
+  .header-card h2 { font-size: 30px; }
 }  
+
+@media only screen and (min-width: 540px) {
+}  
+
+@media only screen and (min-width: 768px) {
+  .hamburger { display: none; }
+  nav ul { display: block; } 
+
+  nav ul li a { 
+    color: #939596;
+    font-size: 17px;
+   }
+
+   nav ul li a::first-letter { text-transform: capitalize; }
+
+  .header-top { width: 95%; } 
+  .header-top nav ul li {padding: 0 10px;}
+  h1 a { font-size: 20px; }
+
+  .header-card h2 {
+     font-size: 35px; 
+     margin-bottom: 15px;
+    }
+}  
+
+@media only screen and (min-width: 995px) {
+  .header-top { width: 90%; }
+  h1 a { font-size: 25px; }
+  nav ul li a { font-size: 20px; }
+} 
+
+@media only screen and (min-width: 1024px) {
+  header .wrapper { min-height: 736px; }
+  .header-card { 
+    top: 250px; 
+    gap: 10px;
+  }
+
+  .header-top { 
+    width: 85%; 
+    align-items: center;
+  }
+
+  h1 a { font-size: 25px; }
+  nav ul li a { font-size: 20px; }
+  .header-card h2 { font-size:  40px; }
+  .header-card p { font-size: 20px; }
+} 
