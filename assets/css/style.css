@@ -111,12 +111,45 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-header .wrapper {width: 100%;}
+header .wrapper { 
+  width: 100%;
+  background-image: url("/assets/Images/template image/infinite-loop-01.jpg");
+  max-height: 736px;
+  min-height: 320px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+ }
+.header-top h1 { text-transform: capitalize; }
 
-.header-top h1 {text-transform: capitalize;}
+.header-top h1 a {
+  color: #fff;
+  font-weight: bold;
+}
 
-nav ul li a {text-transform: capitalize;}
+nav ul {display: none;}
+/* nav ul li a { 
+  text-transform: capitalize; 
+  color: #6f7072;
+} */
 
+.bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  margin: 3px;
+  background-color: #fff;
+  opacity: 0.6;
+  text-indent: -9999px;
+}
+
+.header-top {
+  width: 80%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px 0;
+}
 
 
 
