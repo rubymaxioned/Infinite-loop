@@ -111,8 +111,11 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+header .wrapper {width: 100%;}
 
+.header-top h1 {text-transform: capitalize;}
 
+nav ul li a {text-transform: capitalize;}
 
 
 
