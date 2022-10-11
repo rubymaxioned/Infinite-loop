@@ -792,11 +792,13 @@ input[type="text"] { padding: 10px; }
   }
 
   h1 a { font-size: 25px; }
+
+  h1 a:hover { color: #345679}
   nav ul li a { font-size: 20px; }
   .header-card h2 { font-size: 40px; }
   .header-card p { font-size: 20px; }
   .arrow-down { top: 500px; }
-  .arrow-icon::before { padding: 15px 25px; }
+.arrow-icon::before { padding: 15px 25px; }
 
   .what-head h2 {
     font-size: 25px;
@@ -824,9 +826,17 @@ input[type="text"] { padding: 10px; }
     justify-content: flex-start;
   }
 
+  .learn-btn a:hover,
+  .details-btn a:hover{
+    background-color: #808080;
+    color: #fff;
+  }
+
   .top p { margin-bottom: 15px; }
   .testimonial .wrapper,
   .contact .wrapper { width: 75%; }
+
+  .icon-section ul li a:hover { background-color: #266fbb;}
 }
 
 @media only screen and (min-width: 1354px) {
