@@ -230,8 +230,7 @@ span {
 /*=================================
   Header styling starts here
 =================================*/
-header .wrapper {
-  width: 100%;
+header{
   padding-bottom: 270px;
   background: url("/assets/Images/template image/infinite-loop-01.jpg")
     no-repeat center center;
