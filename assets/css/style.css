@@ -688,6 +688,36 @@ form
   .header-card p { font-size: 20px; }
   .arrow-down { top: 500px; }
   .arrow-icon::before { padding: 15px 25px; }
+  .what-head h2 { 
+    font-size: 25px;
+    margin-bottom: 15px;
+   }
+
+   .what-head p { font-size: 15px; }
+   .icons::before { font-size: 30px; }
+   .what-section ul li h3 { font-size: 20px; }
+   .what-section ul li p { 
+     font-size: 15px;
+     line-height: 30px; 
+    }
+
+   [title="Learn More"],
+   [title="Details"]
+   {
+    padding: 8px 13px;
+    font-size: 15px;
+   }
+
+   .learn-btn,
+   .details-btn
+   {
+    justify-content: flex-start;
+   }
+
+   .top p { margin-bottom: 15px; }
+   .testimonial .wrapper,
+   .contact .wrapper
+    { width: 75%; }
 } 
 
 @media only screen and (min-width: 1354px) {
