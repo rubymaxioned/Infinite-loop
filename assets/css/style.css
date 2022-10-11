@@ -266,3 +266,12 @@ header { position: relative; }
   .header-card h2 { font-size:  40px; }
   .header-card p { font-size: 20px; }
 } 
+
+@media only screen and (min-width: 1354px) {
+  .header-card { top: 260px; }
+.header-top { width: 91%; }
+.header-top nav { padding:  0 30px; }
+.header-top nav ul li { padding: 0px 26px; }
+h1 a { font-size: 20px; }
+.header-card h2 { font-size: 55px; }
+}
