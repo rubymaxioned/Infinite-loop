@@ -102,6 +102,11 @@ li {
 .bold { font-weight: bold; }
 .transition { transition: 1s all ease; }
 span { display: inline-block; }
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /*for wrapper*/
 .wrapper {
@@ -308,7 +313,8 @@ header .wrapper { padding: 0; }
 }
 
 .testimonial h2,
-.gallery h2
+.gallery h2,
+.contact h2
 {
   font-size: 20px;
     text-transform: capitalize;
@@ -316,11 +322,14 @@ header .wrapper { padding: 0; }
     margin-bottom: 20px;
 }
 
-.testimonial h2 { color: #FEFDFF; }
+.testimonial h2,
+.contact h2
+ { color: #FEFDFF; }
 .gallery h2 { color: #2E77AE; }
 
 .testimonial p,
-.gallery p
+.gallery p,
+.contact p
 {
   font-size: 13px;
     text-align: justify;
@@ -328,7 +337,9 @@ header .wrapper { padding: 0; }
     margin-bottom: 25px;
 }
 
-.testimonial p {  color: #E8EFFC; }
+.testimonial p,
+.contact p
+{  color: #E8EFFC; }
 
 .testimonial ul li { margin-top: 30px; }
 
@@ -386,6 +397,58 @@ header .wrapper { padding: 0; }
 
 /*Gallery section end*/
 
+/*Contact section start*/
+
+.contact 
+{
+  background-image: url("/assets/Images/template image/infinite-loop-03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px 0;
+}
+
+input[type=text]
+{
+  width: 100%;
+  border: 1px solid #DAE4E7;
+  display: inline-block;
+  padding: 5px;
+  text-transform: capitalize;
+  background: transparent;
+  color: #F1F1F4;
+  border-radius: 5px
+}
+
+button[type="submit"]
+{
+  padding: 5px;
+  text-transform: capitalize;
+  background: transparent;
+  color: #F1F1F4;
+  border-radius: 5px
+}
+.form-section textarea { 
+  width: 100%; 
+  background: transparent;
+  border-radius: 5px
+}
+
+form 
+{
+  display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+ 
+.icon-section ul 
+{
+  display: flex;
+    flex-direction: column;
+}
+
+/*contact section end*/
+
 /*=================================
   main styling ends here
 =================================*/
@@ -393,7 +456,7 @@ header .wrapper { padding: 0; }
 /*=================================
   footer styling starts here
 =================================*/ 
-.form-section textarea { width: 86%; }
+
 
 
 
