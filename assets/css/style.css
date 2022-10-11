@@ -250,6 +250,7 @@ header .wrapper { padding: 0; }
     padding: 3px 13px;
     font-size: 13px;
     margin-top: 10px;
+    text-transform: capitalize;
 }
 
 .icons {
@@ -285,10 +286,105 @@ header .wrapper { padding: 0; }
   justify-content: center;
 }
 
+.social p:nth-of-type(1)
+{
+  line-height: 14px;
+  margin-bottom: 5px;
+}
+
+.top { margin-bottom: 40px; }
+.social h3 { margin-bottom: 20px; }
 /*what section end*/
 
+/*Testimonial section start*/
 
+.testimonial
+{
+  background-image: url("/assets/Images/template image/infinite-loop-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px 0;
+}
 
+.testimonial h2,
+.gallery h2
+{
+  font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial h2 { color: #FEFDFF; }
+.gallery h2 { color: #2E77AE; }
+
+.testimonial p,
+.gallery p
+{
+  font-size: 13px;
+    text-align: justify;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+.testimonial p {  color: #E8EFFC; }
+
+.testimonial ul li { margin-top: 30px; }
+
+.testimonial ul li img 
+{
+  width: 50%;
+    height: 50%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.testimonial ul li p:nth-of-type(1) { margin-bottom: 5px; }
+.testimonial ul li p:nth-of-type(2) { 
+  text-align: center; 
+  font-style: italic;
+}
+
+.testimonial ul { padding-bottom: 10px; }
+
+.dot 
+{
+  width: 10px;
+  height: 10px;
+  background-color: #FFFBFD;
+  border-radius: 50%;
+  text-indent: -9999px;
+}
+
+.dot-sec 
+{
+  display: flex;
+    width: 40%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+/*Testimonial section end*/
+
+/*Gallery section start*/
+
+.gallery { padding-top: 20px; }
+
+.gallery ul 
+{
+  display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.gallery ul li { margin: 10px 0; }
+
+.gallery .dot { background-color: #C0C0C0;}
+
+/*Gallery section end*/
 
 /*=================================
   main styling ends here
