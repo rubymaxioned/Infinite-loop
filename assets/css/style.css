@@ -222,7 +222,6 @@ header .wrapper { padding: 0; }
 
 .what-section ul li span { 
   text-align: center;
-  display: block;
   margin-bottom: 10px;
 }
 
@@ -242,6 +241,14 @@ header .wrapper { padding: 0; }
     line-height: 20px;
 }
 
+[title="Learn More"],
+[title="Details"]
+{
+  background-color: #336799;
+    color: #fff;
+    padding: 6px 13px;
+    font-size: 13px;
+}
 /*what section end*/
 
 
