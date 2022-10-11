@@ -170,7 +170,7 @@ header { position: relative; }
   display: flex;
     flex-direction: column;
     justify-content: space-between;
-    top: 125px;
+    top: 110px;
     color: #fcfeff;
     text-align: center;
     line-height: 30px;
@@ -184,12 +184,65 @@ header { position: relative; }
  }
 
  .header-card p { text-transform: capitalize; }
-
  .header-card p span { text-transform: uppercase; }
+
+ .arrow-down { 
+  position: absolute;
+  top: 240px;
+  left: 48%;
+}
+
+header .wrapper { padding: 0; } 
 
 /*End of Banner section*/
 
+/*What section start*/
 
+.what-section .wrapper { 
+  padding: 30px 0; 
+}
+
+.what-head h2 
+{
+  text-align: center;
+    font-size: 20px;
+    color: #35799D;
+    margin-bottom: 10px
+}
+
+.what-head p 
+{
+  font-size: 13px;
+    text-align: justify;
+    margin-bottom: 30px;
+    line-height: 20px;
+}
+
+.what-section ul li { margin-bottom: 25px; }
+
+.what-section ul li span { 
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.what-section ul li h3 
+{
+  text-align: center;
+    text-transform: capitalize;
+    color: #266FBB;
+    font-size: 17px;
+    margin-bottom: 10px
+}
+
+.what-section ul li p 
+{
+  font-size: 13px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+/*what section end*/
 
 
 
@@ -237,10 +290,14 @@ header { position: relative; }
   .header-top nav ul li {padding: 0 10px;}
   h1 a { font-size: 20px; }
 
+  .header-card { top: 200px; }
+  .arrow-down { top: 400px; }
   .header-card h2 {
      font-size: 35px; 
      margin-bottom: 15px;
     }
+
+    header .wrapper { padding-bottom: 250px; }
 }  
 
 @media only screen and (min-width: 995px) {
@@ -274,4 +331,9 @@ header { position: relative; }
 .header-top nav ul li { padding: 0px 26px; }
 h1 a { font-size: 20px; }
 .header-card h2 { font-size: 55px; }
+.arrow-down { 
+  position: absolute;
+  top: 570px;
+  left: 48%;
+}
 }
