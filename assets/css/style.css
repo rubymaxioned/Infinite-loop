@@ -455,9 +455,8 @@ header { position: relative; }
 .contact h2 {
   color: #fefdff;
 }
-.gallery h2 {
-  color: #2e77ae;
-}
+
+.gallery h2 { color: #2e77ae; }
 
 .testimonial p,
 .gallery p,
@@ -469,13 +468,9 @@ header { position: relative; }
 }
 
 .testimonial p,
-.contact p {
-  color: #e8effc;
-}
+.contact p { color: #e8effc; }
 
-.testimonial ul li {
-  margin-top: 30px;
-}
+.testimonial ul li { margin-top: 30px; }
 
 .testimonial ul li img {
   width: 50%;
@@ -486,17 +481,14 @@ header { position: relative; }
   margin-bottom: 25px;
 }
 
-.testimonial ul li p:nth-of-type(1) {
-  margin-bottom: 5px;
-}
+.testimonial ul li p:nth-of-type(1) { margin-bottom: 5px; }
+
 .testimonial ul li p:nth-of-type(2) {
   text-align: center;
   font-style: italic;
 }
 
-.testimonial ul {
-  padding-bottom: 10px;
-}
+.testimonial ul { padding-bottom: 10px; }
 
 .dot {
   width: 10px;
@@ -517,9 +509,7 @@ header { position: relative; }
 
 /*Gallery section start*/
 
-.gallery {
-  padding-top: 20px;
-}
+.gallery { padding-top: 20px; }
 
 .gallery ul {
   display: flex;
@@ -527,13 +517,9 @@ header { position: relative; }
   padding-bottom: 15px;
 }
 
-.gallery ul li {
-  margin: 10px 0;
-}
+.gallery ul li { margin: 10px 0; }
 
-.gallery .dot {
-  background-color: #c0c0c0;
-}
+.gallery .dot { background-color: #c0c0c0; }
 
 /*Gallery section end*/
 
@@ -631,15 +617,11 @@ form {
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (min-width: 480px) {
-  .header-card h2 {
-    font-size: 30px;
-  }
+  .header-card h2 { font-size: 30px; }
 }
 
 @media only screen and (min-width: 540px) {
-  header .wrapper {
-    padding-bottom: 300px;
-  }
+  header .wrapper { padding-bottom: 300px; }
 
   .arrow-icon::before {
     padding: 10px;
@@ -651,13 +633,9 @@ form {
     flex-basis: 45%;
   }
 
-  .what-section ul li span {
-    width: 100%;
-  }
+  .what-section ul li span { width: 100%; }
 
-  .icons::before {
-    left: 50%;
-  }
+  .icons::before { left: 50%; }
 
   .what-section ul {
     display: flex;
@@ -670,18 +648,16 @@ form {
     justify-content: space-between;
   }
 
-  .testimonial ul li {
-    flex-basis: 30%;
-  }
+  .testimonial ul li { flex-basis: 30%; }
+
   .testimonial ul li img {
     flex-basis: 30%;
     width: 70%;
     height: auto;
   }
 
-  .testimonial ul li p {
-    font-size: 11px;
-  }
+  .testimonial ul li p { font-size: 11px; }
+
   .gallery ul {
     display: flex;
     flex-direction: row;
@@ -689,126 +665,88 @@ form {
     flex-wrap: wrap;
   }
 
-  .gallery ul li {
-    flex-basis: 48%;
-  }
+  .gallery ul li { flex-basis: 48%; }
 
   button[type="submit"] {
     width: 20%;
     margin: 0 auto;
     margin-bottom: 40px;
   }
-  .contact {
-    padding: 30px 0;
-  }
-  .footer-bottom p {
-    font-size: 12px;
-  }
+
+  .contact { padding: 30px 0; }
+  .footer-bottom p { font-size: 12px; }
 }
 
 @media only screen and (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-  nav ul {
-    display: block;
-  }
+  .hamburger { display: none; }
+  nav ul { display: block; }
 
   nav ul li a {
     color: #939596;
     font-size: 17px;
   }
 
-  nav ul li a::first-letter {
-    text-transform: capitalize;
-  }
-
-  .header-top {
-    width: 95%;
-  }
-  .header-top nav ul li {
-    padding: 0 10px;
-  }
-  h1 a {
-    font-size: 20px;
-  }
+  nav ul li a::first-letter { text-transform: capitalize; }
+.header-top { width: 95%;}
+  .header-top nav ul li { padding: 0 10px;}
+  h1 a { font-size: 20px;}
 
   .header-card {
     top: 200px;
     line-height: 37px;
   }
 
-  .arrow-down {
-    top: 400px;
-  }
+  .arrow-down { top: 400px;}
+
   .header-card h2 {
     font-size: 35px;
     margin-bottom: 15px;
   }
 
-  header .wrapper {
-    padding-bottom: 480px;
-  }
+  header .wrapper { padding-bottom: 480px; }
+  h1 a { font-size: 25px; }
+  .header-top { align-items: center; }
 
-  h1 a {
-    font-size: 25px;
-  }
-  .header-top {
-    align-items: center;
-  }
   .header-card h2 {
     font-size: 40px;
     margin-bottom: 20px;
   }
-  .header-card p {
-    font-size: 19px;
-  }
+
+  .header-card p { font-size: 19px; }
+
   .what-section ul li {
     display: flex;
     flex-basis: 47%;
   }
-  .what-section ul li h3 {
-    text-align: initial;
-  }
-  .what-section ul li span {
-    width: 50%;
-  }
+
+  .what-section ul li h3 { text-align: initial; }
+  .what-section ul li span { width: 50%; }
+
   .icons::before {
     left: 30%;
     font-size: 25px;
   }
 
-  .testimonial ul li p {
-    font-size: 13px;
-  }
-  .testimonial ul li p:nth-of-type(2) {
-    text-align: end;
-  }
-  .gallery ul li {
-    flex-basis: 32%;
-  }
-  .gallery ul li:last-child {
-    margin-right: 34%;
-  }
-  .gallery ul {
-    padding-bottom: 20px;
-  }
+  .testimonial ul li p { font-size: 13px; }
+  .testimonial ul li p:nth-of-type(2) { text-align: end; }
+  .gallery ul li { flex-basis: 32%; }
+  .gallery ul li:last-child { margin-right: 34%; }
+  .gallery ul { padding-bottom: 20px; }
+
   .dot-sec {
     width: 25%;
     padding-bottom: 40px;
   }
+
   .footer-card {
     display: flex;
     justify-content: space-between;
   }
-  .form-section {
-    width: 50%;
-  }
-  .icon-section {
-    width: 40%;
-  }
 
-  .testimonial p:nth-of-type(1),
+  .form-section { width: 50%; }
+  .icon-section { width: 40%; }
+
+ .testimonial p:nth-of-type(1),
   .gallery p,
   .contact p {
     font-size: 15px;
@@ -820,48 +758,29 @@ form {
     font-size: 25px;
   }
 
-  .contact p {
-    margin-bottom: 40px;
-  }
+  .contact p { margin-bottom: 40px; }
+input[type="text"] { padding: 10px; }
 
-  input[type="text"] {
-    padding: 10px;
-  }
   button[type="submit"] {
     width: 30%;
     padding: 10px;
   }
 
-  .icon-section ul li a {
-    font-size: 15px;
-  }
-  .footer-icon::before {
-    font-size: 18px;
-  }
-  .icon-section ul li {
-    margin-bottom: 10px;
-  }
+  .icon-section ul li a { font-size: 15px; }
+  .footer-icon::before { font-size: 18px; }
+  .icon-section ul li { margin-bottom: 10px;}
 }
 
 @media only screen and (min-width: 995px) {
-  .header-top {
-    width: 90%;
-  }
-  h1 a {
-    font-size: 25px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  .gallery ul li:last-child {
-    margin-right: 34%;
-  }
+  .header-top { width: 90%; }
+  h1 a { font-size: 25px; }
+  nav ul li a { font-size: 20px; }
+  .gallery ul li:last-child { margin-right: 34%; }
 }
 
 @media only screen and (min-width: 1024px) {
-  header .wrapper {
-    min-height: 736px;
-  }
+  header .wrapper { min-height: 736px; }
+
   .header-card {
     top: 250px;
     gap: 10px;
@@ -872,38 +791,22 @@ form {
     align-items: center;
   }
 
-  h1 a {
-    font-size: 25px;
-  }
-  nav ul li a {
-    font-size: 20px;
-  }
-  .header-card h2 {
-    font-size: 40px;
-  }
-  .header-card p {
-    font-size: 20px;
-  }
-  .arrow-down {
-    top: 500px;
-  }
-  .arrow-icon::before {
-    padding: 15px 25px;
-  }
+  h1 a { font-size: 25px; }
+  nav ul li a { font-size: 20px; }
+  .header-card h2 { font-size: 40px; }
+  .header-card p { font-size: 20px; }
+  .arrow-down { top: 500px; }
+  .arrow-icon::before { padding: 15px 25px; }
+
   .what-head h2 {
     font-size: 25px;
     margin-bottom: 15px;
   }
 
-  .what-head p {
-    font-size: 15px;
-  }
-  .icons::before {
-    font-size: 30px;
-  }
-  .what-section ul li h3 {
-    font-size: 20px;
-  }
+  .what-head p { font-size: 15px; }
+  .icons::before { font-size: 30px; }
+  .what-section ul li h3 { font-size: 20px; }
+
   .what-section ul li p {
     font-size: 15px;
     line-height: 30px;
@@ -916,38 +819,24 @@ form {
   }
 
   .learn-btn,
-  .details-btn {
+  .details-btn 
+  {
     justify-content: flex-start;
   }
 
-  .top p {
-    margin-bottom: 15px;
-  }
+  .top p { margin-bottom: 15px; }
   .testimonial .wrapper,
-  .contact .wrapper {
-    width: 75%;
-  }
+  .contact .wrapper { width: 75%; }
 }
 
 @media only screen and (min-width: 1354px) {
-  .header-card {
-    top: 260px;
-  }
-  .header-top {
-    width: 91%;
-  }
-  .header-top nav {
-    padding: 0 30px;
-  }
-  .header-top nav ul li {
-    padding: 0px 26px;
-  }
-  h1 a {
-    font-size: 20px;
-  }
-  .header-card h2 {
-    font-size: 55px;
-  }
+  .header-card { top: 260px; }
+  .header-top { width: 91%; }
+  .header-top nav { padding: 0 30px; }
+  .header-top nav ul li { padding: 0px 26px; }
+  h1 a { font-size: 20px; }
+  .header-card h2 { font-size: 55px; }
+  
   .arrow-down {
     position: absolute;
     top: 570px;
