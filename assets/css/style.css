@@ -258,14 +258,15 @@ header .wrapper { padding: 0; }
     text-transform: capitalize;
 }
 
-.icons {
+.icons
+{
   width: 50px;
   height: 20px;
   position: relative;
   text-indent: -9999px;
 }
 
-.icons::before 
+.icons::before
 {
   position: absolute;
   top: 10px;
@@ -276,7 +277,20 @@ header .wrapper { padding: 0; }
   color: #4985AA;
 }
 
-.arrow-icon::before { content: "\f063"; }
+.footer-icon::before
+{
+  font-family: "FontAwesome";
+  color: #E8F7F9;
+  margin-right: 15px;
+}
+
+.arrow-icon::before { 
+  content: "\f063";
+  padding: 5px;
+    color: #fff;
+    background-color: #345679;
+    left: 10%;
+ }
 .chart-icon::before { content: "\f080"; }
 .message-icon::before { content: "\f27a"; }
 .fingerprint-icon::before { content: "\f063"; }
@@ -426,7 +440,10 @@ button[type="submit"]
   text-transform: capitalize;
   background: transparent;
   color: #F1F1F4;
-  border-radius: 5px
+  border-radius: 5px;
+  margin-bottom: 35px;
+  background-color: #336799;
+  border: none;
 }
 .form-section textarea { 
   width: 100%; 
@@ -445,8 +462,20 @@ form
 {
   display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
 
+.icon-section ul li { 
+  margin-bottom: 5px;
+  font-size: 13px;
+ }
+
+.chat::before { content: "\f075"; }
+.email::before { content: "\f0e0"; }
+.location::before { content: "\f041 "; }
+.phone::before { content: "\f098 "; }
+
+.icon-section ul li a { color: #DAE4E7; }
 /*contact section end*/
 
 /*=================================
@@ -457,7 +486,12 @@ form
   footer styling starts here
 =================================*/ 
 
-
+.footer-bottom p 
+{
+  text-transform: capitalize;
+    font-size: 10px;
+    text-align: center;
+}
 
 
 
