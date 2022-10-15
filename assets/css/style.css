@@ -219,6 +219,7 @@ span {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 /*for wrapper*/
@@ -230,16 +231,43 @@ span {
 /*=================================
   Header styling starts here
 =================================*/
-header .wrapper {
-  width: 100%;
-  padding-bottom: 270px;
+header{
   background: url("/assets/Images/template image/infinite-loop-01.jpg")
     no-repeat center center;
   background-size: cover;
+  padding-top: 245px;
+  padding-bottom: 245px;
+}
+
+header .wrapper { width: 93%; }
+
+.header-top {
+  width: 93%;
+    position: absolute;
+    top: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger {
+  border: 1.5px solid #D7D6D6;
+    padding: 2px 7px;
+    border-radius: 2px;
+}
+
+.bar {
+  width: 12px;
+  height: 2px;
+  margin: 3px;
+  display: block;
+  background-color: #F9F9F9;
+  text-indent: -9999px;
 }
 
 h1 {
   text-transform: capitalize;
+  font-size: 15px;
 }
 
 h1 a {
@@ -251,24 +279,6 @@ nav ul {
   display: none;
 }
 
-.bar {
-  width: 20px;
-  height: 2px;
-  margin: 3px;
-  display: block;
-  background-color: #fff;
-  opacity: 0.6;
-  text-indent: -9999px;
-}
-
-.header-top {
-  width: 80%;
-  padding: 20px 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 /*=================================
   Header styling ends here
 =================================*/
@@ -278,28 +288,35 @@ nav ul {
 =================================*/
 
 /*Banner section start*/
-header { position: relative; }
+
+.banner-section 
+{
+  top: 172px;
+    position: absolute;
+    width: 100%;
+    background: green;
+}
 
 .header-card {
-  width: 86%;
   display: flex;
-  position: absolute;
-  top: 110px;
-  color: #fcfeff;
-  flex-direction: column;
-  justify-content: space-between;
-  line-height: 30px;
-  text-align: center;
+    color: #fcfeff;
+    flex-direction: column;
+    text-align: center;
 }
 
 .header-card h2 {
-  margin-bottom: 10px;
-  font-size: 22px;
+  margin-bottom: 9px;
+  font-size: 37px;
   letter-spacing: 1.2px;
   text-transform: capitalize;
 }
 
-.header-card p { text-transform: capitalize; }
+.header-card p { 
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-bottom: 9px
+ }
+
 .header-card p span {
   text-transform: uppercase;
 }
