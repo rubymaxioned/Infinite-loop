@@ -329,7 +329,7 @@ nav ul {
   }
 
 .arrow-down::before {
-  padding: 10px 27px;
+  padding: 12px 10%;
   content: "\f063";
   background: #345679;
   color: #fff;
@@ -420,19 +420,14 @@ nav ul {
 
 .what-section .icons { display: none; }
 
-/* .footer-icon::before {
-  font-family: "FontAwesome";
-  color: #e8f7f9;
-  margin-right: 15px;
-}
-
 /*what section end*/
 
 /*Testimonial section start*/
 
 .testimonial {
-  padding: 74px 0;
-  background-image: url("/assets/Images/template image/infinite-loop-02.jpg") no-repeat center center;
+  padding: 68px 0;
+  background: url("/assets/Images/template image/infinite-loop-02.jpg")
+    no-repeat center center;
   background-size: cover;
 }
 
@@ -445,10 +440,17 @@ nav ul {
   font-size: 26px;
   text-transform: capitalize;
   text-align: center;
+  color: #FFFDFF;
+}
+
+.top p { margin-bottom: 10px; }
+
+.italic-style {
+  font-style: italic;
+  font-weight: bold;
 }
 
 /* .testimonial h2, */
-/* .contact h2 { color: #fefdff; } */
 
 .gallery h2 { color: #2e77ae; }
 
@@ -459,6 +461,7 @@ nav ul {
   font-size: 10px;
   text-align: center;
   line-height: 20px;
+  color: #C6CAC1;
 }
 
 .blue { color: #74B0DF; }
@@ -470,8 +473,8 @@ nav ul {
 .testimonial ul li { margin-top: 30px; }
 
 .testimonial ul li img {
-  width: 50%;
-  height: 50%;
+  width: 30%;
+  height: 30%;
   margin: auto;
   margin-bottom: 25px;
   display: block;
@@ -487,10 +490,12 @@ nav ul {
 
 .testimonial ul { padding-bottom: 10px; }
 
+.dot-sec .active {  background-color: #fffbfd; }
+
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #fffbfd;
+  background-color: #A0ABB0;
   border-radius: 50%;
   text-indent: -9999px;
 }
@@ -820,7 +825,6 @@ input[type="text"] { padding: 10px; }
     justify-content: flex-start;
   }
 
-  .top p { margin-bottom: 10px; }
   .testimonial .wrapper,
   .contact .wrapper { width: 75%; }
 }
