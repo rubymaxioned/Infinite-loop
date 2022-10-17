@@ -511,7 +511,13 @@ nav ul {
 
 /*Gallery section start*/
 
-.gallery { padding-top: 20px; }
+.gallery { padding-top: 78px; }
+.gallery .wrapper { width: 91%; }
+
+.gallery p { 
+  font-size:  9px; 
+  color: #A4A4AB;
+}
 
 .gallery ul {
   display: flex;
@@ -522,6 +528,7 @@ nav ul {
 .gallery ul li { margin: 10px 0; }
 
 .gallery .dot { background-color: #c0c0c0; }
+.gallery .active { background-color: #3AA0E4; }
 
 /*Gallery section end*/
 
@@ -534,6 +541,25 @@ nav ul {
   background-position: center center;
   padding: 20px 0;
 }
+
+.contact h2 { 
+  color: #F6FFFB;
+  font-weight: unset;
+  font-size: 26px;
+  letter-spacing: 1.3px;
+}
+
+.contact .wrapper { 
+  width: 94%;
+  padding-top: 50px;
+ }
+
+ .footer-top .head-para 
+ {
+  font-size: 13px;
+  line-height: 25px;
+  margin-bottom: 46px;
+ }
 
 input[type="text"] {
   width: 100%;
