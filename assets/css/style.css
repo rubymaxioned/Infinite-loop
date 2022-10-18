@@ -644,6 +644,10 @@ form {
   text-align: center;
 }
 
+.textarea-field {
+  padding: 10px 5%;
+  color: #fff;
+}
 /*=================================
   footer styling ends here
 =================================*/
