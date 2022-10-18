@@ -660,9 +660,11 @@ form {
 }
 
 footer { padding-top: 65px; }
-
 footer .wrapper { width: 89%; }
 
+::placeholder { color: #fff; }
+
+.textarea-field { padding: 11px 5%; }
 /*=================================
   footer styling ends here
 =================================*/
