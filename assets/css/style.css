@@ -232,23 +232,20 @@ li {
   Header styling starts here
 =================================*/
 header {
-  padding-top: 245px;
-  padding-bottom: 245px;
+  padding: 77% 0 77% 0;
   margin-bottom: 87px;
-  background: url("/assets/Images/template image/infinite-loop-01.jpg")
-    no-repeat center center;
-  background-size: cover;
+  background: url("/assets/Images/template image/infinite-loop-01.jpg") no-repeat center center / cover;
 }
 
 header .wrapper { width: 93%; }
 
 .header-top {
   width: 93%;
-  position: absolute;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: absolute;
   top: 7px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hamburger {
@@ -298,8 +295,8 @@ nav ul { display: none; }
 
 .header-card {
   display: flex;
-  flex-direction: column;
   color: #fcfeff;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -312,8 +309,8 @@ nav ul { display: none; }
 
 .header-card p {
   margin-bottom: 9px;
-  text-transform: capitalize;
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .header-card p span { text-transform: uppercase; }
@@ -342,14 +339,13 @@ nav ul { display: none; }
 
 .what-section .wrapper {
   width: 98.5%;
-  padding-left: 5%;
-  padding-right: 3%;
+  padding: 0 3% 0 5%;
 }
 
 .what-head h2 {
   margin-bottom: 16px;
-  font-size: 28px;
   color: #35799d;
+  font-size: 28px;
   text-transform: capitalize;
 }
 
@@ -422,9 +418,7 @@ nav ul { display: none; }
 
 .testimonial {
   padding: 68px 0;
-  background: url("/assets/Images/template image/infinite-loop-02.jpg")
-    no-repeat center center;
-  background-size: cover;
+  background: url("/assets/Images/template image/infinite-loop-02.jpg") no-repeat center center / cover;
 }
 
 .capital { text-transform: uppercase; }
@@ -434,10 +428,10 @@ nav ul { display: none; }
 .gallery h2,
 .contact h2 {
   margin-bottom: 20px;
-  font-size: 26px;
-  text-transform: capitalize;
-  text-align: center;
   color: #fffdff;
+  font-size: 26px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .top p { margin-bottom: 10px; }
@@ -454,9 +448,9 @@ nav ul { display: none; }
 .gallery p,
 .contact p {
   margin-bottom: 25px;
+  color: #c6cac1;
   font-size: 10px;
   line-height: 20px;
-  color: #c6cac1;
 }
 
 .blue { color: #74b0df; }
@@ -466,10 +460,9 @@ nav ul { display: none; }
 .testimonial ul li img {
   width: 30%;
   height: 30%;
-  margin: auto;
-  margin-bottom: 25px;
-  display: block;
   border-radius: 50%;
+  margin: 0 auto 25px;
+  display: block;
 }
 
 .testimonial-first {
@@ -482,9 +475,9 @@ nav ul { display: none; }
 .testimonial ul li p:nth-of-type(1) { margin-bottom: 10px; }
 
 .testimonial ul li p:nth-of-type(2) {
-  text-align: end;
-  font-style: italic;
   font-size: 13px;
+  font-style: italic;
+  text-align: end;
   text-transform: capitalize;
 }
 
@@ -495,8 +488,8 @@ nav ul { display: none; }
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #a0abb0;
   border-radius: 50%;
+  background-color: #a0abb0;
   text-indent: -9999px;
 }
 
@@ -534,18 +527,15 @@ nav ul { display: none; }
 
 /*Contact section start*/
 
-.contact {
-  background-image: url("/assets/Images/template image/infinite-loop-03.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+footer {
   padding: 20px 0;
+  background: url("/assets/Images/template image/infinite-loop-03.jpg") no-repeat center center / cover;
 }
 
 .contact h2 {
   color: #f6fffb;
-  font-weight: unset;
   font-size: 26px;
+  font-weight: unset;
   letter-spacing: 1.3px;
 }
 
@@ -564,21 +554,21 @@ nav ul { display: none; }
 .second-input {
   width: 90%;
   padding: 7px 5%;
-  background: transparent;
   border: 1px solid #dae4e7;
   border-radius: 5px;
-  color: #f1f1f4;
   display: inline-block;
-  text-transform: capitalize;
+  background: transparent;
+  color: #f1f1f4;
   font-size: 13px;
+  text-transform: capitalize;
 }
 
 .submit {
   width: 50%;
   padding: 7px;
-  margin-bottom: 35px;
   border: none;
   border-radius: 3px;
+  margin-bottom: 35px;
   background: transparent;
   background-color: #336799;
   color: #f1f1f4;
@@ -587,10 +577,10 @@ nav ul { display: none; }
 .form-section textarea {
   width: 90%;
   height: 166px;
-  margin-bottom: 11px;
-  background: transparent;
   border: 1px solid #dae4e7;
   border-radius: 5px;
+  margin-bottom: 11px;
+  background: transparent;
 }
 
 form {
@@ -607,8 +597,8 @@ form {
 
 .icon-section ul li {
   margin-bottom: 5px;
-  font-size: 13px;
   font-family: "FontAwesome";
+  font-size: 13px;
 }
 
 .icon-section ul li a::before {
@@ -622,10 +612,9 @@ form {
 .phone::before { content: "\f098 "; }
 
 .icon-section ul li a {
-  margin-bottom: 28px;
+  margin: 0 0 28px 5%;
   color: #dae4e7;
   font-size: 16px;
-  margin-left: 13px;
 }
 /*contact section end*/
 
@@ -640,8 +629,8 @@ form {
 .footer-bottom p {
   margin-bottom: 5px;
   font-size: 11px;
-  text-transform: capitalize;
   text-align: center;
+  text-transform: capitalize;
 }
 
 /*=================================
@@ -669,8 +658,7 @@ form {
   .what-section ul li span { width: 100%; }
 
   header {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 100px 0;
   }
 
   .arrow-down::before { padding: 12px 6%; }
@@ -706,16 +694,15 @@ form {
   .gallery ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .gallery ul li { flex-basis: 48%; }
 
-  button[type="submit"] {
+  .submit {
     width: 20%;
-    margin: 0 auto;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
 
   .contact { padding: 30px 0; }
@@ -734,11 +721,7 @@ form {
 
   nav ul li a::first-letter { text-transform: capitalize; }
 
-  header 
-  {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
+  header { padding: 50px 0; }
 
   .header-top { width: 95%; }
   .header-top nav ul li { padding: 0 10px; }
@@ -805,9 +788,10 @@ form {
   .contact h2 { font-size: 25px; }
 
   .contact p { margin-bottom: 40px; }
-  input[type="text"] { padding: 10px; }
+  .form-first,
+  .form-second { padding: 10px; }
 
-  button[type="submit"] {
+  .submit {
     width: 30%;
     padding: 10px;
   }
@@ -826,8 +810,7 @@ form {
 
   .header-top {
     width: 89%;
-    margin-left: 8px;
-    margin-top: 10px;
+    margin: 10px 0 0 8px;
     align-items: center;
   }
 
@@ -866,8 +849,8 @@ form {
     padding-right: 0;
    }
 
-  [title="Learn More"],
-  [title="Details"] {
+  .learn-btn, 
+  .details-btn {
     padding: 8px 13px;
     font-size: 15px;
   }
