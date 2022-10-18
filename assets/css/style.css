@@ -212,13 +212,14 @@ li {
 .transition {
   transition: 1s all ease;
 }
-span {
+/* span {
   display: inline-block;
-}
+} */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 /*for wrapper*/
@@ -230,14 +231,45 @@ span {
 /*=================================
   Header styling starts here
 =================================*/
-header{
-  padding-bottom: 270px;
+header {
+  padding-top: 245px;
+  padding-bottom: 245px;
+  margin-bottom: 87px;
   background: url("/assets/Images/template image/infinite-loop-01.jpg")
     no-repeat center center;
   background-size: cover;
 }
 
+header .wrapper { width: 93%; }
+
+.header-top {
+  width: 93%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 7px;
+}
+
+.hamburger {
+  padding: 2px 7px;
+  border: 1.5px solid #d7d6d6;
+  border-radius: 2px;
+}
+
+.bar {
+  width: 12px;
+  height: 2px;
+  margin: 3px;
+  display: block;
+  background-color: #f9f9f9;
+  text-indent: -9999px;
+}
+
+nav ul li a:hover { color: #345679; }
+
 h1 {
+  font-size: 15px;
   text-transform: capitalize;
 }
 
@@ -246,27 +278,7 @@ h1 a {
   font-weight: bold;
 }
 
-nav ul {
-  display: none;
-}
-
-.bar {
-  width: 20px;
-  height: 2px;
-  margin: 3px;
-  display: block;
-  background-color: #fff;
-  opacity: 0.6;
-  text-indent: -9999px;
-}
-
-.header-top {
-  width: 80%;
-  padding: 20px 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
+nav ul { display: none; }
 
 /*=================================
   Header styling ends here
@@ -277,64 +289,80 @@ nav ul {
 =================================*/
 
 /*Banner section start*/
-header { position: relative; }
+
+.banner-section {
+  width: 100%;
+  position: absolute;
+  top: 172px;
+}
 
 .header-card {
-  width: 86%;
   display: flex;
-  position: absolute;
-  top: 110px;
-  color: #fcfeff;
   flex-direction: column;
-  justify-content: space-between;
-  line-height: 30px;
+  color: #fcfeff;
   text-align: center;
 }
 
 .header-card h2 {
-  margin-bottom: 10px;
-  font-size: 22px;
+  margin-bottom: 9px;
+  font-size: 37px;
   letter-spacing: 1.2px;
   text-transform: capitalize;
 }
 
-.header-card p { text-transform: capitalize; }
-.header-card p span {
-  text-transform: uppercase;
+.header-card p {
+  margin-bottom: 9px;
+  text-transform: capitalize;
+  font-size: 14px;
 }
 
+.header-card p span { text-transform: uppercase; }
+
 .arrow-down {
-  position: absolute;
-  top: 240px;
-  left: 48%;
+  width: 100%;
+  position: relative;
+  top: 123px;
+  text-align: center;
 }
+
+.arrow-down::before {
+  padding: 12px 10%;
+  background: #345679;
+  content: "\f063";
+  color: #fff;
+  font-family: "FontAwesome";
+  font-size: 24px;
+}
+
+.arrow-icon { display: none; }
 
 /*End of Banner section*/
 
 /*What section start*/
 
 .what-section .wrapper {
-  padding: 30px 0;
+  width: 98.5%;
+  padding-left: 5%;
+  padding-right: 3%;
 }
 
 .what-head h2 {
-  margin-bottom: 10px;
+  margin-bottom: 16px;
+  font-size: 28px;
   color: #35799d;
-  font-size: 20px;
-  text-align: center;
   text-transform: capitalize;
 }
 
+.what-section p { color: #9e9fa9; }
+
 .what-head p {
-  margin-bottom: 30px;
-  font-size: 13px;
+  margin-bottom: 67px;
+  font-size: 12.75px;
+  font-weight: 500;
   line-height: 25px;
-  text-align: justify;
 }
 
-.what-section ul li {
-  margin-bottom: 30px;
-}
+.what-section ul li { margin-bottom: 30px; }
 
 .what-section ul li span {
   margin-bottom: 10px;
@@ -342,22 +370,43 @@ header { position: relative; }
 }
 
 .what-section ul li h3 {
-  margin-bottom: 10px;
-  color: #266fbb;
-  font-size: 17px;
-  text-align: center;
+  margin-bottom: 16px;
+  color: #35799d;
+  font-size: 21px;
+  font-weight: 500;
   text-transform: capitalize;
 }
 
 .what-section ul li p {
   font-size: 13px;
   line-height: 25px;
-  text-align: justify;
 }
 
-[title="Learn More"],
-[title="Details"] {
-  padding: 3px 13px;
+.social p:nth-of-type(2) {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.details-btn { margin-bottom: 37px; }
+
+.what-section ul li::before {
+  margin-bottom: 30px;
+  display: block;
+  color: #35799d;
+  font-family: "FontAwesome";
+  font-size: 40px;
+  text-align: center;
+}
+
+.what-section ul li::before { font-family: "FontAwesome"; }
+.what-section ul li:nth-of-type(1):before { content: "\f080"; }
+.what-section ul li:nth-of-type(2):before { content: "\f27a"; }
+.what-section ul li:nth-of-type(3):before { content: "\f063"; }
+.what-section ul li:nth-of-type(4):before { content: "\f0c0"; }
+
+.learn-btn a,
+.details-btn a {
+  padding: 9px 20px;
   margin-top: 10px;
   background-color: #336799;
   color: #fff;
@@ -365,118 +414,89 @@ header { position: relative; }
   text-transform: capitalize;
 }
 
-.icons {
-  width: 50px;
-  height: 20px;
-  position: relative;
-  text-indent: -9999px;
-}
+.what-section .icons { display: none; }
 
-.icons::before {
-  position: absolute;
-  top: 10px;
-  left: 160%;
-  color: #4985aa;
-  font-family: "FontAwesome";
-  transform: translate(-50%, -50%);
-  text-indent: 0;
-}
-
-.footer-icon::before {
-  margin-right: 15px;
-  color: #e8f7f9;
-  font-family: "FontAwesome";
-}
-
-.arrow-icon::before {
-  content: "\f063";
-  padding: 5px;
-  left: 10%;
-  background-color: #345679;
-  color: #fff;
-}
-
-.chart-icon::before { content: "\f080"; }
-.message-icon::before { content: "\f27a"; }
-.fingerprint-icon::before { content: "\f063"; }
-.social-icon::before { content: "\f0c0"; }
-.what-section ul li { display: flex; }
-
-.learn-btn,
-.details-btn {
-  display: flex;
-  justify-content: center;
-}
-
-.social p:nth-of-type(1) {
-  margin-bottom: 5px;
-  line-height: 14px;
-}
-
-.top { margin-bottom: 40px; }
-.social h3 { margin-bottom: 20px; }
 /*what section end*/
 
 /*Testimonial section start*/
 
 .testimonial {
-  padding: 20px 0;
-  background: url("/assets/Images/template image/infinite-loop-02.jpg") no-repeat center center ;
+  padding: 68px 0;
+  background: url("/assets/Images/template image/infinite-loop-02.jpg")
+    no-repeat center center;
+  background-size: cover;
 }
+
+.capital { text-transform: uppercase; }
+.testimonial .wrapper { width: 93%; }
 
 .testimonial h2,
 .gallery h2,
 .contact h2 {
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 26px;
   text-transform: capitalize;
   text-align: center;
+  color: #fffdff;
 }
 
-.testimonial h2,
-.contact h2 {
-  color: #fefdff;
+.top p { margin-bottom: 10px; }
+
+.italic-style {
+  font-style: italic;
+  font-weight: bold;
 }
 
-.gallery h2 { color: #2e77ae; }
+.testimonial-second { width: 85%; }
+.gallery h2 { color: #2e77ae;}
 
 .testimonial p,
 .gallery p,
 .contact p {
   margin-bottom: 25px;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 20px;
-  text-align: justify;
+  color: #c6cac1;
 }
 
-.testimonial p,
-.contact p { color: #e8effc; }
-
+.blue { color: #74b0df; }
+.dark { font-weight: bold; }
 .testimonial ul li { margin-top: 30px; }
 
 .testimonial ul li img {
-  width: 50%;
-  height: 50%;
-  border-radius: 50%;
+  width: 30%;
+  height: 30%;
   margin: auto;
   margin-bottom: 25px;
   display: block;
+  border-radius: 50%;
 }
 
-.testimonial ul li p:nth-of-type(1) { margin-bottom: 5px; }
+.testimonial-first {
+  width: 66%;
+  margin: 0 auto;
+  font-size: 12px;
+  text-align: initial;
+}
+
+.testimonial ul li p:nth-of-type(1) { margin-bottom: 10px; }
 
 .testimonial ul li p:nth-of-type(2) {
+  text-align: end;
   font-style: italic;
-  text-align: center;
+  font-size: 13px;
+  text-transform: capitalize;
 }
 
-.testimonial ul { padding-bottom: 10px; }
+.testimonial .dot-sec { margin-bottom: 29px; }
+.testimonial ul { padding-bottom: 48px; }
+.dot-sec .active { background-color: #fffbfd; }
 
 .dot {
   width: 10px;
   height: 10px;
+  background-color: #a0abb0;
   border-radius: 50%;
-  background-color: #fffbfd;
   text-indent: -9999px;
 }
 
@@ -491,53 +511,86 @@ header { position: relative; }
 
 /*Gallery section start*/
 
-.gallery { padding-top: 20px; }
+.gallery { padding-top: 78px; }
+.gallery .wrapper { width: 91%; }
+
+.gallery p {
+  font-size: 9px;
+  color: #a4a4ab;
+}
 
 .gallery ul {
-  padding-bottom: 15px;
+  padding-bottom: 0px;
   display: flex;
   flex-direction: column;
 }
 
 .gallery ul li { margin: 10px 0; }
-
 .gallery .dot { background-color: #c0c0c0; }
+.gallery .active { background-color: #3aa0e4; }
+.gallery .dot-sec { padding-bottom: 84px; }
 
 /*Gallery section end*/
 
 /*Contact section start*/
 
 .contact {
+  background-image: url("/assets/Images/template image/infinite-loop-03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   padding: 20px 0;
-  background: url("/assets/Images/template image/infinite-loop-03.jpg") no-repeat center center ;
 }
 
-input[type="text"] {
-  width: 100%;
-  padding: 5px;
+.contact h2 {
+  color: #f6fffb;
+  font-weight: unset;
+  font-size: 26px;
+  letter-spacing: 1.3px;
+}
+
+.contact .wrapper {
+  width: 94%;
+  padding-top: 50px;
+}
+
+.footer-top .head-para {
+  margin-bottom: 51px;
+  font-size: 13px;
+  line-height: 25px;
+}
+
+.first-input,
+.second-input {
+  width: 90%;
+  padding: 7px 5%;
+  background: transparent;
   border: 1px solid #dae4e7;
   border-radius: 5px;
-  display: inline-block;
   color: #f1f1f4;
-  background: transparent;
+  display: inline-block;
   text-transform: capitalize;
+  font-size: 13px;
 }
 
-button[type="submit"] {
-  padding: 5px;
+.submit {
+  width: 50%;
+  padding: 7px;
   margin-bottom: 35px;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background: transparent;
   background-color: #336799;
   color: #f1f1f4;
   text-transform: capitalize;
 }
 .form-section textarea {
-  width: 100%;
+  width: 90%;
+  height: 166px;
+  margin-bottom: 11px;
+  background: transparent;
   border: 1px solid #dae4e7;
   border-radius: 5px;
-  background: transparent;
 }
 
 form {
@@ -547,7 +600,7 @@ form {
 }
 
 .icon-section ul {
-  margin-bottom: 30px;
+  margin-bottom: 41px;
   display: flex;
   flex-direction: column;
 }
@@ -555,14 +608,25 @@ form {
 .icon-section ul li {
   margin-bottom: 5px;
   font-size: 13px;
+  font-family: "FontAwesome";
 }
 
-.chat::before { content: "\f075"; }
+.icon-section ul li a::before {
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+.chat::before { content: "\f075";}
 .email::before { content: "\f0e0"; }
 .location::before { content: "\f041 "; }
 .phone::before { content: "\f098 "; }
 
-.icon-section ul li a { color: #dae4e7; }
+.icon-section ul li a {
+  margin-bottom: 28px;
+  color: #dae4e7;
+  font-size: 16px;
+  margin-left: 13px;
+}
 /*contact section end*/
 
 /*=================================
@@ -574,7 +638,8 @@ form {
 =================================*/
 
 .footer-bottom p {
-  font-size: 10px;
+  margin-bottom: 5px;
+  font-size: 11px;
   text-transform: capitalize;
   text-align: center;
 }
@@ -584,18 +649,17 @@ form {
 =================================*/
 
 /*media query starts*/
-/*media query for 995px starts here*/
+/*media query for 480px starts here*/
 @media only screen and (min-width: 480px) {
   .header-card h2 { font-size: 30px; }
+  .testimonial ul li img { width: 25%; }
+  .dot-sec { width: 25%; }
 }
 
+/*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
   header .wrapper { padding-bottom: 300px; }
-
-  .arrow-icon::before {
-    padding: 10px;
-    top: 30px;
-  }
+  .what-section ul { justify-content: space-around; }
 
   .what-section ul li {
     display: block;
@@ -604,7 +668,19 @@ form {
 
   .what-section ul li span { width: 100%; }
 
-  .icons::before { left: 50%; }
+  header {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .arrow-down::before { padding: 12px 6%; }
+  .what-section ul li h3 { text-align: center; }
+  .testimonial-first { width: 100%; }
+  .testimonial-second { font-size: 11px; }
+
+  .testimonial p,
+  .gallery p,
+  .contact p { font-size: 13px; }
 
   .what-section ul {
     display: flex;
@@ -646,6 +722,7 @@ form {
   .footer-bottom p { font-size: 12px; }
 }
 
+/*media query for 768px starts here*/
 @media only screen and (min-width: 768px) {
   .hamburger { display: none; }
   nav ul { display: block; }
@@ -656,16 +733,21 @@ form {
   }
 
   nav ul li a::first-letter { text-transform: capitalize; }
-.header-top { width: 95%;}
-  .header-top nav ul li { padding: 0 10px;}
-  h1 a { font-size: 20px;}
+
+  header 
+  {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .header-top { width: 95%; }
+  .header-top nav ul li { padding: 0 10px; }
+  h1 a { font-size: 20px; }
 
   .header-card {
     top: 200px;
     line-height: 37px;
   }
-
-  .arrow-down { top: 400px;}
 
   .header-card h2 {
     margin-bottom: 15px;
@@ -688,14 +770,13 @@ form {
     flex-basis: 47%;
   }
 
+  .what-section ul li::before { 
+    margin-right: 15px;
+    font-size: 30px;
+   }
+
   .what-section ul li h3 { text-align: initial; }
-  .what-section ul li span { width: 50%; }
-
-  .icons::before {
-    left: 30%;
-    font-size: 25px;
-  }
-
+  .what-section ul li span { width: 50%;}
   .testimonial ul li p { font-size: 13px; }
   .testimonial ul li p:nth-of-type(2) { text-align: end; }
   .gallery ul li { flex-basis: 32%; }
@@ -713,78 +794,77 @@ form {
   }
 
   .form-section { width: 50%; }
-  .icon-section { width: 40%; }
+  .icon-section { width: 40%;}
 
- .testimonial p:nth-of-type(1),
+  .testimonial p:nth-of-type(1),
   .gallery p,
-  .contact p {
-    font-size: 15px;
-  }
+  .contact p {font-size: 15px; }
 
   .testimonial h2,
   .gallery h2,
-  .contact h2 {
-    font-size: 25px;
-  }
+  .contact h2 { font-size: 25px; }
 
   .contact p { margin-bottom: 40px; }
-input[type="text"] { padding: 10px; }
+  input[type="text"] { padding: 10px; }
 
   button[type="submit"] {
     width: 30%;
     padding: 10px;
   }
-
-  .icon-section ul li a { font-size: 15px; }
-  .footer-icon::before { font-size: 18px; }
-  .icon-section ul li { margin-bottom: 10px;}
 }
 
 @media only screen and (min-width: 995px) {
   .header-top { width: 90%; }
-  h1 a { font-size: 25px; }
+  h1 a { font-size: 25px;}
   nav ul li a { font-size: 20px; }
   .gallery ul li:last-child { margin-right: 34%; }
 }
 
 @media only screen and (min-width: 1024px) {
-  header .wrapper { min-height: 736px; }
-
-  .header-card {
-    top: 250px;
-    gap: 10px;
-  }
+  h1 a { font-size: 16px; }
+  .header-card { top: 250px;}
 
   .header-top {
-    width: 85%;
+    width: 89%;
+    margin-left: 8px;
+    margin-top: 10px;
     align-items: center;
   }
 
-  h1 a { font-size: 25px; }
+  .arrow-down::before { padding: 13px 3%; }
+  .header-top nav ul li { padding: 0px 20px; }
+  nav ul li a { font-size: 16px;}
 
-  h1 a:hover { 
-    color: #345679;
-    cursor: pointer;
+  .header-card h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
   }
-  nav ul li a { font-size: 20px; }
-  .header-card h2 { font-size: 40px; }
-  .header-card p { font-size: 20px; }
-  .arrow-down { top: 500px; }
-.arrow-icon::before { padding: 15px 25px; }
+  .header-card p {
+    margin-bottom: 0px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .banner-section { top: 197px; }
+  .arrow-down { top: 159px; }
 
   .what-head h2 {
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 30px;
   }
 
-  .what-head p { font-size: 15px; }
-  .icons::before { font-size: 30px; }
-  .what-section ul li h3 { font-size: 20px; }
+  .what-section ul li h3 { font-size: 20px;}
 
   .what-section ul li p {
     font-size: 15px;
     line-height: 30px;
   }
+
+  .what-section .wrapper { 
+    width: 91%;
+    padding-left: 0;
+    padding-right: 0;
+   }
 
   [title="Learn More"],
   [title="Details"] {
@@ -793,39 +873,13 @@ input[type="text"] { padding: 10px; }
   }
 
   .learn-btn,
-  .details-btn 
-  {
-    justify-content: flex-start;
-  }
+  .details-btn { justify-content: flex-start; }
 
-  .learn-btn a:hover,
-  .details-btn a:hover{
-    background-color: #808080;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  .top p { margin-bottom: 15px; }
   .testimonial .wrapper,
   .contact .wrapper { width: 75%; }
 
   .icon-section ul li a:hover { 
     background-color: #266fbb;
     cursor: pointer;
-  }
-}
-
-@media only screen and (min-width: 1354px) {
-  .header-card { top: 260px; }
-  .header-top { width: 91%; }
-  .header-top nav { padding: 0 30px; }
-  .header-top nav ul li { padding: 0px 26px; }
-  h1 a { font-size: 20px; }
-  .header-card h2 { font-size: 55px; }
-  
-  .arrow-down {
-    top: 570px;
-    left: 48%;
-    position: absolute;
   }
 }
