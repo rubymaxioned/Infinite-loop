@@ -428,7 +428,7 @@ nav ul { display: none; }
 
 .testimonial h2,
 .gallery h2,
-.contact h2 {
+.footer-top h2 {
   margin-bottom: 20px;
   color: #fffdff;
   font-size: 26px;
@@ -437,8 +437,9 @@ nav ul { display: none; }
 }
 
 .testimonial-second {
-  width: 85%;
+  width: 80%;
   display: inline-block;
+  color: #c6cac1;
   font-size: 13px;
   font-style: italic;
   text-align: end;
@@ -452,12 +453,9 @@ nav ul { display: none; }
   font-weight: bold;
 }
 
-.testimonial-second { width: 85%; }
 .gallery h2 { color: #2e77ae;}
 
-.testimonial p:nth-of-type(1),
-.gallery p:nth-of-type(1),
-.contact p:nth-of-type(1) {
+.first-para {
   margin-bottom: 25px;
   color: #c6cac1;
   font-size: 11px;
@@ -487,6 +485,9 @@ nav ul { display: none; }
   font-size: 11px;
   line-height: 20px;
 }
+
+.testimonial ul li:nth-of-type(2),
+.testimonial ul li:nth-of-type(3) { display: none; }
 
 .testimonial ul li p:nth-of-type(1) { margin-bottom: 10px; }
 
@@ -534,7 +535,11 @@ nav ul { display: none; }
   flex-direction: column;
 }
 
-.gallery ul li { margin: 10px 0; }
+.gallery ul li { 
+  margin: 10px 0;
+  width: 50%;
+  align-self: center;
+ }
 .gallery .dot { background-color: #c0c0c0; }
 .gallery .active { background-color: #3aa0e4; }
 .gallery .dot-sec { padding-bottom: 84px; }
@@ -628,7 +633,7 @@ form {
 .phone::before { content: "\f098 "; }
 
 .icon-section ul li a {
-  margin: 0 0 28px 5%;
+  margin: 0 0 42px 5%;
   color: #dae4e7;
   font-size: 16px;
 }
@@ -644,10 +649,15 @@ form {
 
 .footer-bottom p {
   margin-bottom: 5px;
-  font-size: 11px;
+  font-size: 10px;
   text-align: center;
   text-transform: capitalize;
+  color: #dae4e7;
 }
+
+footer { padding-top: 65px; }
+
+footer .wrapper { width: 89%; }
 
 /*=================================
   footer styling ends here
