@@ -544,6 +544,8 @@ nav ul { display: none; }
 .gallery .active { background-color: #3aa0e4; }
 .gallery .dot-sec { padding-bottom: 84px; }
 
+.gallery-img { display: none; }
+
 /*Gallery section end*/
 
 /*Contact section start*/
@@ -567,8 +569,10 @@ footer {
 
 .footer-top .head-para {
   margin-bottom: 51px;
+  color: #a4a4ab;
   font-size: 13px;
   line-height: 25px;
+  text-align: center;
 }
 
 .first-input,
