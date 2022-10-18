@@ -450,8 +450,6 @@ nav ul {
   font-weight: bold;
 }
 
-/* .testimonial h2, */
-
 .gallery h2 { color: #2e77ae; }
 
 .testimonial p,
@@ -466,9 +464,6 @@ nav ul {
 
 .blue { color: #74B0DF; }
 .dark { font-weight: bold; }
-
-/* .testimonial p,
-.contact p { color: #e8effc; } */
 
 .testimonial ul li { margin-top: 30px; }
 
@@ -492,16 +487,19 @@ nav ul {
 }
 
 .testimonial ul li p:nth-of-type(1) { 
-  margin-bottom: 5px;
+  margin-bottom: 10px;
  }
 
 .testimonial ul li p:nth-of-type(2) {
-  text-align: center;
+  text-align: end;
   font-style: italic;
+  font-size: 13px;
+  text-transform: capitalize;
 }
 
-.testimonial ul { padding-bottom: 10px; }
+.testimonial .dot-sec { margin-bottom: 29px; }
 
+.testimonial ul { padding-bottom: 48px; }
 .dot-sec .active {  background-color: #fffbfd; }
 
 .dot {
@@ -534,13 +532,14 @@ nav ul {
 .gallery ul {
   display: flex;
   flex-direction: column;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
 }
 
 .gallery ul li { margin: 10px 0; }
 
 .gallery .dot { background-color: #c0c0c0; }
 .gallery .active { background-color: #3AA0E4; }
+.gallery .dot-sec { padding-bottom: 84px; }
 
 /*Gallery section end*/
 
@@ -570,32 +569,37 @@ nav ul {
  {
   font-size: 13px;
   line-height: 25px;
-  margin-bottom: 46px;
+  margin-bottom: 51px;
  }
 
-input[type="text"] {
-  width: 100%;
+.first-input,
+.second-input {
+  width: 90%;
   border: 1px solid #dae4e7;
   display: inline-block;
-  padding: 5px;
+  padding: 7px 5%;
   text-transform: capitalize;
   background: transparent;
   color: #f1f1f4;
   border-radius: 5px;
+  font-size: 13px;
 }
 
-button[type="submit"] {
-  padding: 5px;
+.submit {
+  width: 50%;
+  padding: 7px;
   text-transform: capitalize;
   background: transparent;
   color: #f1f1f4;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-bottom: 35px;
   background-color: #336799;
   border: none;
 }
 .form-section textarea {
-  width: 100%;
+  width: 90%;
+  height: 166px;
+  margin-bottom: 11px;
   background: transparent;
   border: 1px solid #dae4e7;
   border-radius: 5px;
@@ -610,13 +614,19 @@ form {
 .icon-section ul {
   display: flex;
   flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 41px;
 }
 
 .icon-section ul li {
   margin-bottom: 5px;
   font-size: 13px;
+  font-family: "FontAwesome";
 }
+
+.icon-section ul li a::before { 
+  padding-right: 20px;
+  font-size: 20px;
+ }
 
 .chat::before {
   content: "\f075";
@@ -633,6 +643,9 @@ form {
 
 .icon-section ul li a {
   color: #dae4e7;
+  margin-bottom: 28px;
+  font-size: 16px;
+  margin-left: 13px;
 }
 /*contact section end*/
 
@@ -646,8 +659,9 @@ form {
 
 .footer-bottom p {
   text-transform: capitalize;
-  font-size: 10px;
+  font-size: 11px;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 /*=================================
