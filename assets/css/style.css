@@ -300,6 +300,13 @@ nav ul { display: none; }
   text-align: center;
 }
 
+.arrow-icon { 
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-indent: -9999px;
+}
+
 .header-card h2 {
   margin-bottom: 9px;
   font-size: 37px;
@@ -329,11 +336,23 @@ nav ul { display: none; }
   background: #345679;
   content: "\f063";
   color: #fff;
-  font-family: "FontAwesome";
+  font-family: "fontAwesome";
   font-size: 24px;
 }
 
-.arrow-icon { display: none; }
+.arrow-icon::before { 
+  left: 50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  content: "\f063";
+  font-family: "fontAwesome";
+  text-indent: 0;
+  color: #fff;
+}
+
+.arrow-icon {  }
+/* .arrow-icon { display: none; } */
 
 /*End of Banner section*/
 
@@ -867,7 +886,7 @@ footer .wrapper { width: 89%; }
    }
 
    .footer-card {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
    }
@@ -915,6 +934,10 @@ footer .wrapper { width: 89%; }
     font-size: 15px;
     margin-bottom: 20px;
    }
+
+   footer .wrapper { width: 70%; }
+   .footer-top .head-para { font-size: 15px; }
+   .footer-bottom p { font-size: 14px; }
   /*
   .header-card { top: 250px;}
 
