@@ -801,6 +801,120 @@ footer .wrapper { width: 89%; }
 @media only screen and (min-width: 1024px) {
   .header-top { top: 25px; }
   h1 a { font-size: 24px; }
+  nav { width: 70%; }
+
+  nav ul { 
+    display: flex;
+    justify-content: end;
+   }
+
+  nav ul li {  padding-right: 5% }
+
+  nav ul li a { 
+    color: #E0E6E2;
+    font-size: 25px;
+   }
+
+   header { padding: 20% 0; }
+   .what-section .wrapper {
+    width: 90%;
+    padding: 0;
+   }
+
+   .testimonial .wrapper { width: 80%; }
+   .gallery .wrapper { width: 86%; }
+
+   .header-card { 
+    width: 28%;
+    margin: 0 auto;
+  }
+
+  .header-card p { font-size: 18px; }
+
+   .what-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+   }
+
+   .what-section ul li {
+    display: flex;
+    flex-basis: 47%;
+    gap: 5%; 
+   }
+
+   .testimonial ul li:nth-of-type(2),
+   .testimonial ul li:nth-of-type(3) { display: block; }
+
+   .testimonial ul { display: flex; }
+
+   .testimonial ul li:img {
+    width: 50%;
+    height: 50%;
+   }
+
+   .dot-sec { width: 15%; }
+
+   .dot {
+    width: 17px;
+    height: 17px;
+   }
+
+   .gallery-img { display: block; }
+   .gallery ul { 
+    flex-direction: row;
+    gap: 3%;
+   }
+
+   .footer-card {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+   }
+
+   .what-head h2 { font-size: 35px; }
+
+   .what-head p {
+    font-size: 15px;
+    line-height: 30px;
+   }
+
+   .what-section ul li h3 { font-size: 25px; }
+
+   .what-section ul li p {
+    font-size: 15px;
+    line-height: 33px;
+   }
+
+   .learn-btn a,
+   .details-btn a { font-size: 15px; }
+
+   .testimonial h2,
+   .gallery h2,
+   .header-top h2 { font-size: 31px; }
+
+   .first-para {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 15px;
+   }
+
+   .testimonial ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+   }
+
+   .testimonial-first { 
+    width: 100%;
+    font-size: 13px;
+    line-height: 30px;
+   }
+
+   .gallery p {  
+    font-size: 15px;
+    margin-bottom: 20px;
+   }
   /*
   .header-card { top: 250px;}
 
